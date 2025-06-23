@@ -1,0 +1,90 @@
+{
+  "countries": [
+    {
+      "name": "United States",
+      "president": {
+        "name": "Joe Biden",
+        "since": "2021-01-20",
+        "political_party": "Democratic Party",
+        "age": 82
+      }
+    },
+    {
+      "name": "India",
+      "president": {
+        "name": "Droupadi Murmu",
+        "since": "2022-07-25",
+        "political_party": "Bharatiya Janata Party (BJP)",
+        "age": 66
+      }
+    },
+    {
+      "name": "France",
+      "president": {
+        "name": "Emmanuel Macron",
+        "since": "2017-05-14",
+        "political_party": "La République En Marche!",
+        "age": 47
+      }
+    },
+    {
+      "name": "Russia",
+      "president": {
+        "name": "Vladimir Putin",
+        "since": "2012-05-07",
+        "political_party": "Independent",
+        "age": 72
+      }
+    },
+    {
+      "name": "China",
+      "president": {
+        "name": "Xi Jinping",
+        "since": "2013-03-14",
+        "political_party": "Communist Party of China",
+        "age": 71
+      }
+    },
+    {
+      "name": "Germany",
+      "president": {
+        "name": "Frank-Walter Steinmeier",
+        "since": "2017-03-19",
+        "political_party": "Social Democratic Party",
+        "age": 69
+      }
+    },
+    {
+      "name": "Brazil",
+      "president": {
+        "name": "Luiz Inácio Lula da Silva",
+        "since": "2023-01-01",
+        "political_party": "Workers' Party",
+        "age": 79
+      }
+    },
+    {
+      "name": "South Africa",
+      "president": {
+        "name": "Cyril Ramaphosa",
+        "since": "2018-02-15",
+        "political_party": "African National Congress",
+        "age": 72
+      }
+    },
+    {
+      "name": "Japan",
+      "president": {
+        "name": "N/A",
+        "note": "Japan has a Prime Minister as head of government and Emperor as ceremonial head of state."
+      }
+    },
+    {
+      "name": "United Kingdom",
+      "president": {
+        "name": "N/A",
+        "note": "The UK has a Prime Minister as head of government and King Charles III as head of state."
+      }
+    }
+  ]
+}
