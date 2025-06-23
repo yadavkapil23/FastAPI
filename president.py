@@ -44,3 +44,17 @@ def get_country(country : str = Path(...,description="Country is United States",
                 "party" : i['president']['political_party']  #Go into president → get political party
             }
     raise HTTPException(status_code=404,detail="ERROR")
+
+#now using the Query param.
+@app.get("/greet/{name}")
+def greeting(name : str = Path(...,description="Good Morning Joe Biden",example="Joe Biden"),
+             detail : bool = Query(False,description="If true , show detailed info.")):
+     if detail:
+        return {
+            "message": f"Good morning, {name}!",
+            "note": "Hope you have a wonderful and productive day!"
+        }
+     else:
+        return {
+            "message": f"Good morning, {name}!"
+        }
