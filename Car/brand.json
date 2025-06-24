@@ -1,0 +1,109 @@
+{
+  "car_brands": [
+    {
+      "name": "Toyota",
+      "valuation": 59.47,
+      "country": "Japan",
+      "revenue": 275.91,
+      "employees": 375000
+    },
+    {
+      "name": "Volkswagen",
+      "valuation": 44.89,
+      "country": "Germany",
+      "revenue": 293.45,
+      "employees": 670000
+    },
+    {
+      "name": "Mercedes-Benz",
+      "valuation": 58.22,
+      "country": "Germany",
+      "revenue": 158.06,
+      "employees": 172000
+    },
+    {
+      "name": "Ford",
+      "valuation": 22.67,
+      "country": "United States",
+      "revenue": 158.06,
+      "employees": 183000
+    },
+    {
+      "name": "BMW",
+      "valuation": 41.36,
+      "country": "Germany",
+      "revenue": 131.50,
+      "employees": 118000
+    },
+    {
+      "name": "Honda",
+      "valuation": 25.97,
+      "country": "Japan",
+      "revenue": 124.24,
+      "employees": 211000
+    },
+    {
+      "name": "Tesla",
+      "valuation": 650.00,
+      "country": "United States",
+      "revenue": 81.46,
+      "employees": 110000
+    },
+    {
+      "name": "Hyundai",
+      "valuation": 20.45,
+      "country": "South Korea",
+      "revenue": 98.51,
+      "employees": 112000
+    },
+    {
+      "name": "Nissan",
+      "valuation": 10.28,
+      "country": "Japan",
+      "revenue": 78.32,
+      "employees": 136000
+    },
+    {
+      "name": "Ferrari",
+      "valuation": 52.91,
+      "country": "Italy",
+      "revenue": 5.09,
+      "employees": 4500
+    },
+    {
+      "name": "Porsche",
+      "valuation": 42.33,
+      "country": "Germany",
+      "revenue": 37.63,
+      "employees": 36000
+    },
+    {
+      "name": "General Motors",
+      "valuation": 48.34,
+      "country": "United States",
+      "revenue": 156.74,
+      "employees": 167000
+    },
+    {
+      "name": "Audi",
+      "valuation": 12.50,
+      "country": "Germany",
+      "revenue": 61.53,
+      "employees": 90000
+    },
+    {
+      "name": "Volvo",
+      "valuation": 18.00,
+      "country": "Sweden",
+      "revenue": 33.55,
+      "employees": 41000
+    },
+    {
+      "name": "Kia",
+      "valuation": 6.30,
+      "country": "South Korea",
+      "revenue": 63.54,
+      "employees": 52511
+    }
+  ]
+}

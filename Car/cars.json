@@ -1,0 +1,54 @@
+{
+  "car_brands": [
+    {
+      "brand": "Toyota",
+      "country": "Japan",
+      "valuation_usd_billion": 59.47
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "country": "Germany",
+      "valuation_usd_billion": 58.8
+    },
+    {
+      "brand": "Tesla",
+      "country": "USA",
+      "valuation_usd_billion": 58.3
+    },
+    {
+      "brand": "BMW",
+      "country": "Germany",
+      "valuation_usd_billion": 46.2
+    },
+    {
+      "brand": "Porsche",
+      "country": "Germany",
+      "valuation_usd_billion": 43.1
+    },
+    {
+      "brand": "Honda",
+      "country": "Japan",
+      "valuation_usd_billion": 22.5
+    },
+    {
+      "brand": "Ford",
+      "country": "USA",
+      "valuation_usd_billion": 19.2
+    },
+    {
+      "brand": "Hyundai",
+      "country": "South Korea",
+      "valuation_usd_billion": 18.3
+    },
+    {
+      "brand": "Audi",
+      "country": "Germany",
+      "valuation_usd_billion": 17.2
+    },
+    {
+      "brand": "Chevrolet",
+      "country": "USA",
+      "valuation_usd_billion": 11.5
+    }
+  ]
+}
