@@ -2,9 +2,9 @@
   "users": [
     {
       "id": 1,
-      "username": "johndoe",
-      "email": "johndoe@example.com",
-      "full_name": "John Doe"
+      "username": "donald_trump",
+      "email": "donald@trump.com",
+      "full_name": "Donald Trump"
     },
     {
       "id": 2,
