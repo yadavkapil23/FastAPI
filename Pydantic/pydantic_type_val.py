@@ -65,7 +65,7 @@ class Patient(BaseModel):
     sex : str
     height : float
     married : bool = False #here also we can set the default value 
-    allergies : Optional[List][str] = None #if we want to make this optional  , we have to give this a default value , like None.
+    allergies : Optional[List[str]] = None #if we want to make this optional  , we have to give this a default value , like None.
     contact_details : dict[str,str]
 
 patient_details = {'name' : 'kapil','age' : 20,'sex' : 'male','height':6.1,'married': False,'allergies' : ['flowers','chocolates','monkeys'],'contact_details': {'email' : 'kapil@gmail.com','mobile' : '1234567890'}}
