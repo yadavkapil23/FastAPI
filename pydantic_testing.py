@@ -1,10 +1,11 @@
-from pydantic import BaseModel,Field,AnyUrl,EmailStr,field_validator
+from pydantic import BaseModel,Field,AnyUrl,EmailStr,field_validator,model_validator
 from typing import Dict,List,Optional,Literal,Annotated
 
 class Details(BaseModel): #defining a class that inherits frmo BaseModel , making it a Pydantic model.
     first_name : Annotated[str,Field(max_length=24,description="Enter Your Name.",examples=("Rohit","Vipul"))]
     last_name : Optional[str] = None
     aadhar_card : str 
+    birth_certificate: Optional[str] = None
     age : int = Field(ge=18 , le=58)
     sex : str 
     married : bool = None
@@ -26,8 +27,14 @@ class Details(BaseModel): #defining a class that inherits frmo BaseModel , makin
         raise ValueError("Not a LinkedinURL")
 
 
-
-
+#MODEL VALIDATOR 
+    @model_validator(mode='after')
+    @classmethod
+    def aadhar_validation(cls,model):
+        if 0 < model.age < 5 and not model.birth_certificate : 
+            raise ValueError("Please enter Your Birth Certificate Number.")
+        
+        return model 
 
 
 
