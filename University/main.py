@@ -116,7 +116,7 @@ def create_student(student : Student): #here we have created a variable student 
     
     #if not then create
     data[student.id] = student.model_dump(exclude=['id']) #we are excluding id beacuse we have already used it as key in out dictioanry.
-
+     #data is dictionay storing info of student , student.id is the unique id of student.
 
 #if included our data would look like - 
 #     {
@@ -152,27 +152,39 @@ def delete_student(student_id : str):
 
 #PUT
 @app.put("/edit/{student_id}")
-def update(student_id : str , student_update : Student):
+def update(student_id: str, student_update: Student):
     data = load_data()
 
-    if student_update.id not in data:
-        raise HTTPException(status_code=401,detail="Student not found.")
-    
-    existing_Student_info = data[student_id]
+    if student_id not in data:
+        raise HTTPException(status_code=404, detail="Student not found.")
 
-    updated_student_info =student_update.model_dump(exclude_unset=True)
+    student_dict = student_update.model_dump(exclude=['id'])  # 'id' is used as key
 
-    for key,value in updated_student_info.items():
-        existing_Student_info[key] = value
-
-
-    existing_Student_info['id'] = student_id
-
-    student_pydantic_object = Student(**existing_Student_info)
-
-    existing_Student_info = student_pydantic_object.model_dump(exclude='id')
-
-    data[student_id] = existing_Student_info
-
+    data[student_id] = student_dict #updates the student record in new data.
     save_data(data)
+
+    return JSONResponse(status_code=201,content="Data updated successfully.")
+
     
+
+#PATCH
+@app.patch("/patch/{student_id}")
+def patch_student(student_id: str, student_patch: UpdatedStudent):
+    data = load_data()
+
+    if student_id not in data:
+        raise HTTPException(status_code=404, detail="Student not found.")
+
+    existing_student = data[student_id]
+
+    # Extract fields that were provided in the PATCH request
+    updated_fields = student_patch.model_dump(exclude_unset=True)
+
+    # Update only those fields
+    for key, value in updated_fields.items():
+        existing_student[key] = value
+
+    data[student_id] = existing_student
+    save_data(data)
+
+    return JSONResponse(status_code=200, content={"message": "Updated successfully", "updated_data": existing_student})
