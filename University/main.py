@@ -16,6 +16,9 @@ class Student(BaseModel):
     city : Annotated[str, Field(..., description="City of student", examples=["New Delhi"])]
     cgpa : Annotated[float, Field(..., description="CGPA of student", examples=[7.8])]
     
+
+
+#FOR PATCH TO UPDATE SELECTED FIELDS
 class UpdatedStudent(BaseModel):
     id : Annotated[Optional[str], Field(None, description="ID of student", examples=["CSE001"])]
     name : Annotated[Optional[str], Field(None, description="Name of Student", examples=["Naman Sharma"])]
