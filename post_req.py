@@ -17,11 +17,13 @@ class Patient(BaseModel):
     height: Annotated[float, Field(..., gt=0, description="Height of Patient in feet", examples=[6.1])]
     weight: Annotated[float, Field(..., gt=0, description="Weight of Patient", examples=[78])]
 
+    @computed_field
     @property
     def bmi(self) -> float:
         height_m = self.height * 0.3048
         return round(self.weight / (height_m ** 2), 2)
 
+    @computed_field
     @property
     def verdict(self) -> str:
         bmi = self.bmi
