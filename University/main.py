@@ -155,7 +155,7 @@ def delete_student(student_id : str):
 
 #PUT
 @app.put("/edit/{student_id}")
-def update(student_id: str, student_update: Student):
+def update(student_id: str, student_update: Student): 
     data = load_data()
 
     if student_id not in data:
@@ -191,3 +191,8 @@ def patch_student(student_id: str, student_patch: UpdatedStudent):
     save_data(data)
 
     return JSONResponse(status_code=200, content={"message": "Updated successfully", "updated_data": existing_student})
+
+
+
+
+
