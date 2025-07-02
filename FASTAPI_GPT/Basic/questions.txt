@@ -1,0 +1,49 @@
+🔹 Basic-Level Questions
+Create a FastAPI route that returns a simple JSON response:
+{"message": "Hello, FastAPI"} on a GET request to /hello.
+
+Create a POST endpoint /user/ that accepts a JSON body with name and age, and returns a message like:
+{"message": "User Alice is 30 years old"}.
+
+Write a PUT endpoint /user/{user_id} that updates a user's name and email.
+
+Use a Pydantic model to define a Book with fields: title, author, and pages. Create a POST endpoint to add a book.
+
+Create a DELETE endpoint /user/{user_id} that returns a message like:
+{"message": "User 123 deleted"}.
+
+🔹 Intermediate-Level Questions
+Create a PATCH endpoint /user/{user_id} to partially update a user's email. Only the email field should be optional in the request body.
+
+Add status codes and response models:
+Define a User model and return it from a GET /user/{user_id} with a 200 status, and a 404 with an error message if not found.
+
+Simulate a fake database using a Python dictionary. Implement CRUD operations for items using all five HTTP methods.
+
+Create a list endpoint /books/ that returns a list of all books added via the POST endpoint. Store them in a simple in-memory list.
+
+Validate input data: Add constraints to your Pydantic model like minimum age = 18 for a User, and minimum pages = 10 for a Book.
+
+🔹 Challenge-Level
+Implement an endpoint /calculate-age/ where you send a birth_year and it calculates and returns the age based on the current year.
+
+Build a basic REST API for a To-Do App using FastAPI with endpoints for:
+
+POST /tasks/ – Create a task
+
+GET /tasks/ – Get all tasks
+
+GET /tasks/{id} – Get one task
+
+PUT /tasks/{id} – Update entire task
+
+PATCH /tasks/{id} – Update part of a task
+
+DELETE /tasks/{id} – Delete a task
+
+Use query parameters in a GET endpoint:
+
+Example: /search/?q=fastapi&limit=10
+
+Return a mock response showing the query and limit.
+
