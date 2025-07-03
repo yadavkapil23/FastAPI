@@ -1,3 +1,5 @@
+#THIS IS CONTROLLER FILE.
+
 from fastapi import APIRouter, HTTPException
 from schemas.user import User, CreateUser
 #imports the User and CreateUser Pydantic class from user.py file in Schema folder.
