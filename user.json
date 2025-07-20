@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "donald_trump",
+      "email": "donald@trump.com",
+      "full_name": "Donald Trump"
+    },
+    {
+      "id": 2,
+      "username": "janedoe",
+      "email": "janedoe@example.com",
+      "full_name": "Jane Doe"
+    }
+  ],
+  "posts": [
+    {
+      "id": 101,
+      "title": "First Post",
+      "content": "Hello, this is my first post!",
+      "user_id": 1
+    },
+    {
+      "id": 102,
+      "title": "Another Day",
+      "content": "Today was great. Learned FastAPI!",
+      "user_id": 2
+    }
+  ]
+}
